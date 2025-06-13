@@ -1,0 +1,132 @@
+{
+  "authenticated_sources": {
+    "twitter": {
+      "api_key": "",
+      "api_secret": "",
+      "access_token": "",
+      "access_token_secret": "",
+      "bearer_token": "",
+      "enabled": true,
+      "rate_limit": {
+        "requests_per_15min": 300,
+        "requests_per_hour": 1200
+      }
+    },
+    "youtube": {
+      "api_key": "",
+      "enabled": true,
+      "rate_limit": {
+        "requests_per_day": 10000
+      }
+    },
+    "news_api": {
+      "api_key": "",
+      "enabled": true,
+      "rate_limit": {
+        "requests_per_day": 1000
+      }
+    }
+  },
+  "free_sources": {
+    "rss_feeds": {
+      "enabled": true,
+      "feeds": [
+        {
+          "name": "Reuters Business",
+          "url": "https://feeds.reuters.com/reuters/businessNews",
+          "priority": 1
+        },
+        {
+          "name": "Bloomberg Markets",
+          "url": "https://feeds.bloomberg.com/markets/news.rss",
+          "priority": 1
+        },
+        {
+          "name": "WSJ Markets",
+          "url": "https://feeds.wsj.com/wsj/xml/rss/3_7014.xml",
+          "priority": 1
+        },
+        {
+          "name": "Federal Reserve",
+          "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+          "priority": 2
+        },
+        {
+          "name": "CoinDesk",
+          "url": "https://feeds.coindesk.com/rss",
+          "priority": 2
+        }
+      ],
+      "update_interval": 300
+    },
+    "public_apis": {
+      "enabled": true,
+      "sources": [
+        {
+          "name": "FRED",
+          "type": "economic_data",
+          "base_url": "https://api.stlouisfed.org/fred",
+          "api_key": "",
+          "enabled": true,
+          "description": "美联储经济数据"
+        },
+        {
+          "name": "CoinGecko",
+          "type": "crypto_data",
+          "base_url": "https://api.coingecko.com/api/v3",
+          "api_key": "",
+          "enabled": true,
+          "description": "加密货币市场数据"
+        },
+        {
+          "name": "Alpha Vantage",
+          "type": "stock_data",
+          "base_url": "https://www.alphavantage.co/query",
+          "api_key": "",
+          "enabled": false,
+          "description": "股票和外汇数据"
+        },
+        {
+          "name": "Yahoo Finance",
+          "type": "market_data",
+          "base_url": "https://query1.finance.yahoo.com/v8/finance/chart",
+          "api_key": "",
+          "enabled": true,
+          "description": "雅虎财经数据"
+        }
+      ]
+    },
+    "web_scraping": {
+      "enabled": false,
+      "targets": [
+        {
+          "name": "SEC Filings",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar",
+          "enabled": false,
+          "description": "SEC公司文件"
+        },
+        {
+          "name": "Central Bank News",
+          "url": "https://www.bis.org/press/",
+          "enabled": false,
+          "description": "国际清算银行新闻"
+        }
+      ],
+      "respect_robots_txt": true,
+      "delay_between_requests": 2
+    }
+  },
+  "data_quality": {
+    "duplicate_detection": true,
+    "content_filtering": {
+      "min_content_length": 50,
+      "language_filter": ["en", "zh"],
+      "spam_detection": true
+    }
+  },
+  "caching": {
+    "enabled": true,
+    "cache_duration": 3600,
+    "max_cache_size": "100MB"
+  }
+} 

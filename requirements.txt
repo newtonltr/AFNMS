@@ -1,0 +1,24 @@
+# AFNMS - AI Financial News Monitoring System Dependencies
+# HTTP requests library
+requests>=2.31.0
+
+# Twitter API client
+tweepy>=4.14.0
+
+# OpenAI API client
+openai>=1.3.0
+
+# Anthropic Claude API client
+anthropic>=0.7.0
+
+# Async HTTP client
+aiohttp>=3.8.0
+
+# HTML parsing library
+beautifulsoup4>=4.12.0
+
+# Data processing
+pandas>=2.0.0
+
+# Enhanced logging
+colorlog>=6.7.0 

@@ -1,0 +1,260 @@
+# =============================================================================
+# AFNMS (AI Financial News Monitoring System) - .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Python 相关文件
+# -----------------------------------------------------------------------------
+# 字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 分发/打包文件
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# 单元测试/覆盖率报告
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# 虚拟环境
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# -----------------------------------------------------------------------------
+# 敏感信息和配置文件 (安全相关)
+# -----------------------------------------------------------------------------
+# 环境变量文件
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+
+# API密钥和令牌文件
+*_secrets.json
+*_keys.json
+api_keys.txt
+tokens.txt
+credentials.json
+auth_config.json
+
+# 本地配置覆盖文件
+config/local_*.json
+config/*_local.json
+config/production_*.json
+local_config/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# -----------------------------------------------------------------------------
+# 项目特定文件
+# -----------------------------------------------------------------------------
+# 数据文件
+data/
+datasets/
+*.csv
+*.json.bak
+*.xlsx
+*.xls
+
+# 日志文件
+logs/
+*.log
+*.log.*
+log_*.txt
+
+# 缓存和临时文件
+cache/
+temp/
+tmp/
+*.tmp
+*.cache
+
+# 新闻数据和分析结果
+news_data/
+analysis_results/
+market_data/
+financial_reports/
+
+# 备份文件
+*.bak
+*.backup
+*_backup.*
+backup_*/
+
+# -----------------------------------------------------------------------------
+# 开发工具和IDE配置
+# -----------------------------------------------------------------------------
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# -----------------------------------------------------------------------------
+# 系统文件
+# -----------------------------------------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# -----------------------------------------------------------------------------
+# 文档和媒体文件 (可选)
+# -----------------------------------------------------------------------------
+# 大型媒体文件
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+
+# 图片文件 (如果不是项目必需的)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.ico
+
+# 音频文件
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# -----------------------------------------------------------------------------
+# 其他
+# -----------------------------------------------------------------------------
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 测试文件 (临时)
+test_*.py.tmp
+debug_*.py.tmp
+temp_test_*
+
+# 性能分析文件
+*.prof
+*.pstats
+
+# 内存转储文件
+*.dump
+*.dmp
+
+# -----------------------------------------------------------------------------
+# 特殊说明
+# -----------------------------------------------------------------------------
+# 如果需要跟踪某些被忽略的文件，可以使用 !filename 来取消忽略
+# 例如: !config/template_config.json
+
+# 注意：config/ 目录下的模板配置文件应该被跟踪，
+# 但包含真实API密钥的文件应该被忽略 

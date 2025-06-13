@@ -1,0 +1,125 @@
+{
+  "models": [
+          {
+        "id": "gemini-2.5-pro-preview-06-05",
+        "type": "openai",
+        "priority": 1,
+        "api_key": "",
+        "base_url": "",
+        "model": "gemini-2.5-pro-preview-06-05",
+        "max_tokens": null,
+        "temperature": 0.1,
+        "enabled": true,
+        "description": "Gemini 2.5 Pro - 不限制最大tokens"
+      },
+    {
+      "id": "gemini-2.5-flash-preview-05-20",
+      "type": "openai",
+      "priority": 2,
+      "api_key": "",
+      "base_url": "",
+      "model": "gemini-2.5-flash-preview-05-20",
+      "max_tokens": null,
+      "temperature": 0.1,
+      "enabled": true,
+      "description": "Gemini 2.5 Flash - 不限制最大tokens"
+    },
+    {
+      "id": "gpt-41",
+      "type": "openai",
+      "priority": 3,
+      "api_key": "",
+      "base_url": "",
+      "model": "gpt-41",
+      "max_tokens": null,
+      "temperature": 0.1,
+      "enabled": true,
+      "description": "gpt 4.1 不限制最大tokens"
+    },
+    {
+      "id": "o4-mini",
+      "type": "openai",
+      "priority": 4,
+      "api_key": "",
+      "base_url": "",
+      "model": "o4-mini",
+      "max_tokens": null,
+      "temperature": 0.1,
+      "enabled": true,
+      "description": "o4-mini 不限制最大tokens"
+    },
+    {
+      "id": "o4-mini 2",
+      "type": "openai",
+      "priority": 5,
+      "api_key": "",
+      "base_url": "",
+      "model": "o4-mini",
+      "max_tokens": null,
+      "temperature": 0.1,
+      "enabled": true,
+      "description": "o4-mini 2 不限制最大tokens"
+    },
+    {
+      "id": "claude-sonnet",
+      "type": "claude",
+      "priority": 6,
+      "api_key": "",
+      "base_url": "https://api.anthropic.com",
+      "model": "claude-3-sonnet-20240229",
+      "max_tokens": 1000,
+      "temperature": 0.3,
+      "enabled": true,
+      "description": "Claude 3 Sonnet - 平衡性能和成本"
+    },
+    {
+      "id": "gemini-pro",
+      "type": "gemini",
+      "priority": 7,
+      "api_key": "",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta",
+      "model": "gemini-pro",
+      "max_tokens": 1000,
+      "temperature": 0.3,
+      "enabled": true,
+      "description": "Google Gemini Pro - 多模态能力"
+    },
+    {
+      "id": "openrouter-gpt4",
+      "type": "openrouter",
+      "priority": 8,
+      "api_key": "",
+      "base_url": "https://openrouter.ai/api/v1",
+      "model": "openai/gpt-4",
+      "max_tokens": 1000,
+      "temperature": 0.3,
+      "enabled": true,
+      "description": "OpenRouter GPT-4 - 聚合服务"
+    },
+    {
+      "id": "grok-beta",
+      "type": "grok",
+      "priority": 9,
+      "api_key": "",
+      "base_url": "https://api.x.ai/v1",
+      "model": "grok-beta",
+      "max_tokens": 1000,
+      "temperature": 0.3,
+      "enabled": false,
+      "description": "xAI Grok - 实时信息能力"
+    }
+  ],
+  "fallback_strategy": "priority_order",
+  "retry_attempts": 3,
+  "timeout": 30,
+  "health_check_interval": 300,
+  "usage_tracking": {
+    "enabled": true,
+    "log_file": "logs/api_usage.log"
+  },
+  "cost_optimization": {
+    "enabled": true,
+    "daily_budget": 10.0,
+    "prefer_cheaper_models": false
+  }
+} 
